@@ -1,6 +1,10 @@
 networks:
   edge:
     name: edge
+    enable_ipv6: true
+    ipam:
+      config:
+        - subnet: fd00:db8:1::/64
 
 services:
   nginx:
